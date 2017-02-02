@@ -15,6 +15,9 @@ JOIN eerd_loan
   ON eerd_account.account_id = eerd_loan.account_id
 ```
 
+In SQL Server Management Studio, you can press <kbd>Ctrl</kbd> + <kbd>L</kbd>
+to view the query execution plan and estimated cost.
+
 ![query results and execution plan for join statement][4]
 
 Or you could just filter on the `account_type` if you're not interested in the details.
