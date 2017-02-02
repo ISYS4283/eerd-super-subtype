@@ -6,7 +6,7 @@ using [this data definition language][2].
 ![enhanced entity relationship diagram](./eerd.PNG)
 
 To get all the loan accounts, and their details, you will need
-a [`JOIN` statement][1].
+a [`JOIN` statement][1] to select data from multiple tables.
 
 ```sql
 SELECT *
@@ -16,8 +16,8 @@ JOIN eerd_loan
 ```
 
 Or you could just filter on the `account_type` if you're not interested in the details.
-This query is much more efficient, and will run faster if the additional information
-is not necessary for your business question.
+This query is much more efficient because it only uses one table,
+and will run faster if the additional information is not necessary for your business question.
 
 ```sql
 SELECT *
